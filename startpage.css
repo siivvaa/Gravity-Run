@@ -1,0 +1,84 @@
+@font-face{
+    font-family: "arcade";
+    src: url("joystix monospace.ttf");
+}
+
+body{
+    background-image: url("http://blog.sklambert.com/wp-content/uploads/2012/09/bg.png");
+    zoom: 80%;
+}
+
+#container1
+{
+    display: flex;
+    border: white 3px solid;
+    width: 500px;
+    height: 265px;
+    position: absolute;
+    margin-left: 750px;
+    margin-top: 250px;
+}
+
+#container2
+{
+    display: none;
+    border: white 3px solid;
+    width: 500px;
+    height: 320px;
+    position: absolute;
+    margin-left: 750px;
+    margin-top: 250px;
+}
+#intro
+{
+    font-family: "arcade";
+    color: white;
+    font: bold;
+    position: absolute;
+    font-size: 40px;
+    margin-left: 60px;
+}
+
+
+#nxt
+{
+    margin-top: 165px;
+    margin-left:0px;
+    position: absolute;
+    width: 500px;
+    height: 100px;
+    align-content: center;
+    font-family: "arcade";
+    font-size: 20px;
+}
+#gmod
+{
+    font-family: "arcade";
+    color: white;
+    font: bold;
+    position: absolute;
+    font-size: 40px;
+    margin-left: 115px;
+}
+#easy
+{
+    margin-top: 120px;
+    margin-left:60px;
+    position: absolute;
+    width: 400px;
+    height: 65px;
+    align-content: center;
+    font-family: "arcade";
+    font-size: 20px;
+}
+#hard
+{
+    margin-top: 210px;
+    margin-left:60px;
+    position: absolute;
+    width: 400px;
+    height: 65px;
+    align-content: center;
+    font-family: "arcade";
+    font-size: 20px;
+}

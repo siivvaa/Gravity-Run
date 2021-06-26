@@ -1,0 +1,55 @@
+@font-face{
+    font-family: "arcade";
+    src: url("joystix\ monospace.ttf");
+}
+body{
+    zoom: 80%;
+}
+#canvas
+{
+    border:4px dotted white;
+    background-color: azure;
+    background-image: url("http://blog.sklambert.com/wp-content/uploads/2012/09/bg.png");
+    height: 500px;
+    width: 800px;
+    position: absolute;
+    margin-top: 105px;
+    margin-left: 565px;
+}
+#score
+{
+    position: absolute;
+    width:100px;
+    text-align: center;
+    font-size: 50px;
+    color: white;
+    margin-top: 150px;
+    margin-left: 170px;
+}
+
+p
+{
+    font-family: "arcade";
+}
+
+
+#highscore
+{
+    position: absolute;
+    width:100px;
+    text-align: center;
+    font-size: 50px;
+    color: white;
+    margin-top: 150px;
+    margin-left: 1500px;
+}
+
+
+
+
+
+body
+{
+    background-image: url("http://blog.sklambert.com/wp-content/uploads/2012/09/bg.png");
+    margin: 0;
+}

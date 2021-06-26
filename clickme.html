@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8" />
+    <title>Gravity Run</title>
+    <link rel='stylesheet' href="startpage.css">
+</head>
+<body>
+    
+
+    <div id="container1">
+        <p id = "intro">Gravity Run</p>
+        <button id="nxt" type="button">Next</button>
+    </div>
+
+    <div id="container2">
+        <p id="gmod">Game Mode</p>
+        <button id="easy" type="button">Easy</button>
+        <button id="hard" type="button">Hard</button>
+    </div>
+    <script>
+        let nxtBtn = document.getElementById("nxt");
+        let div1 = document.getElementById("container1");
+        let div2=document.getElementById("container2");
+        let ezBtn= document.getElementById("easy");
+        let hrdBtn=document.getElementById("hard");
+        
+
+        nxtBtn.onclick = function()
+        {
+            div1.style.display="none";
+            div2.style.display="flex";
+            console.log("bre");
+        }
+        ezBtn.onclick=function()
+        {
+            window.location.assign("game.html");
+        }
+        hrdBtn.onclick=function()
+        {
+            alert("Under Construction!");
+            window.location.assign("https://youtu.be/oHg5SJYRHA0");
+        }
+
+    </script>
+</body>
+</html>
