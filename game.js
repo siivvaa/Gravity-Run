@@ -50,7 +50,7 @@ function keyDownHandler(evt)
         if(spacePressed==1)
          spacePressed=0;
         else
-        spacePressed=1;
+         spacePressed=1;
         evt.preventDefault();
     }
 }
@@ -79,24 +79,24 @@ class Player
             this.y=160;   
         if(spacePressed)
         { 
-            this.y+=10;
+            this.y=150;
         }
         else
         {
-             this.y-=10;
+             this.y=330;
         }
     }
 }
 
 class Hole
 {
-    constructor(x,y,w,h)
+    constructor(x,y,w,h,gsp)
     {
         this.height=h;
         this.width=w;
         this.y=y;
         this.x=x;
-        this.gmSpeed = -4;
+        this.gmSpeed=gsp;
     }
 
     render()
@@ -109,7 +109,8 @@ class Hole
     {
         this.x+=this.gmSpeed;
         this.render();
-        this.gmSpeed=-4;
+        if(score%5000==0)
+         this.gmSpeed*=100;
     }
 }
 
@@ -117,11 +118,11 @@ class Hole
 function genObstacles()
 {
     let upDownChange = getRandomInt(0,1); // indicates whether hole will spawn up or down
-    console.log(upDownChange)
+    console.log(upDownChange);
     if(upDownChange==0)
-        obstacle = new Hole(canvas.width+20,0 ,150,150);
+        obstacle = new Hole(canvas.width+20,0 ,getRandomInt(5,150),150,-4   );
     else
-        obstacle = new Hole(canvas.width+20, 350, 150,150);
+        obstacle = new Hole(canvas.width+20, 350, getRandomInt(5,150),150,-4);
     obstacles.push(obstacle);
     
 }
